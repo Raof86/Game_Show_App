@@ -16,6 +16,16 @@ const getRandomPhraseAsArray = arr => {
 
 // adds the letters of a string to the display
 const addPhraseToDisplay = arr => {
+    let items = '';
+    function createListItems (arr) {
+        for (let i = 0; i < arr.length; i++)
+        items += `<li>${arr[i]}</li>`;
+    }
+    document.querySelector('main').innerHTML= `
+        <ul>
+        ${createListItems(arr)}
+        </ul>
+        `;
 }
 
 // check if a letter is in the phrase
