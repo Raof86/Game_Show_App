@@ -5,7 +5,7 @@ const overlay = document.querySelector('#overlay');
 
 let missed_variable = 0;
 
-const phrase = ['JavaScript', 'Ruby', 'Golang', 'Java', 'JQuery'];
+const phrase = ['JavaScript is fun', 'Ruby doesnt make sense', 'Golang is ambitios', 'Java and coffee', 'JQuery is dying'];
 
 
 // return a random phrase from an array
