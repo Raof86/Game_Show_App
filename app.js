@@ -2,6 +2,7 @@ let element_1 = document.getElementById('qwerty');
 let element_2 = document.getElementById('phrase');
 let element_3 = document.querySelector('.btn__reset');
 const overlay = document.querySelector('#overlay');
+const btnClick= document.querySelector('.keyrow');
 
 let missed_variable = 0;
 
@@ -20,6 +21,18 @@ const addPhraseToDisplay = arr => {
     function createListItems (arr) {
         for (let i = 0; i < arr.length; i++)
         items += `<li>${arr[i]}</li>`;
+
+        if (!createListItems) {
+            () => {
+                var element = document.getElementById("phrase");
+                element.classList.add("space");
+            }
+        } else {
+            () => {
+                var element = document.getElementById("phrase");
+                element.classList.add("letter");
+            }
+
     }
     document.querySelector('main').innerHTML= `
         <ul>
@@ -28,8 +41,25 @@ const addPhraseToDisplay = arr => {
         `;
 }
 
+
+}
+
 // check if a letter is in the phrase
 const checkLetter = button => {
+
+    btnClick.addEventListener('click', () => {
+         let checkLetter = document.getElementById('li').textContent;
+        ;
+    });
+
+    let match = 0;
+
+    for (i =0; li.length < i; i++) {
+        if ()
+    }
+
+
+  
 }
 
 // check if the game has been won or lost 
