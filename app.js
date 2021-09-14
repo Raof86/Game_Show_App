@@ -49,15 +49,21 @@ const addPhraseToDisplay = arr => {
 const checkLetter = button => {
 
     btnClick.addEventListener('click', () => {
-         let checkLetter = document.getElementById('li').textContent;
-        ;
-    });
+         let checkLetter = document.querySelector(li).textContent;
+      
+         let match = 0;
 
-    let match = 0;
-
-    for (i =0; li.length < i; i++) {
-        if ()
+         for (i =0; li.length < i; i++) {
+             if (checkLetter === li) {
+             var element = document.querySelector(li);
+             element.classList.add("show");
+     
+             checkLetter.push(...match);
+         } 
+         
     }
+
+   
 
 
   
