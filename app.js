@@ -19,8 +19,9 @@ const getRandomPhraseAsArray = arr => {
 const addPhraseToDisplay = arr => {
     let items = '';
     function createListItems (arr) {
-        for (let i = 0; i < arr.length; i++)
+        for (let i = 0; i < arr.length; i++)        
         items += `<li>${arr[i]}</li>`;
+        console.log(items);
 
         if (!createListItems) {
             () => {
@@ -68,7 +69,8 @@ const checkWin = () => {
 
 // listen for the start game button to be pressed
 element_3.addEventListener('click', () => 
-overlay.style.display="none"
+overlay.style.display="none",
+getRandomPhraseAsArray()
 )
 
 // listen for the onscreen keybord to be clicked 
