@@ -23,55 +23,55 @@ const addPhraseToDisplay = arr => {
         items += `<li>${arr[i]}</li>`;
         console.log(items);
 
-        if (!createListItems) {
-            () => {
-                var element = document.getElementById("phrase");
-                element.classList.add("space");
-            }
-        } else {
-            () => {
-                var element = document.getElementById("phrase");
-                element.classList.add("letter");
-            }
+    //     if (!createListItems) {
+    //         () => {
+    //             var element = document.getElementById("phrase");
+    //             element.classList.add("space");
+    //         }
+    //     } else {
+    //         () => {
+    //             var element = document.getElementById("phrase");
+    //             element.classList.add("letter");
+    //         }
 
-    }
-    document.querySelector('main').innerHTML= `
-        <ul>
-        ${createListItems(arr)}
-        </ul>
-        `;
+    // }
+    // document.querySelector('main').innerHTML= `
+    //     <ul>
+    //     ${createListItems(arr)}
+    //     </ul>
+    //     `;
 }
 
 
 }
 
 // check if a letter is in the phrase
-const checkLetter = button => {
+// const checkLetter = button => {
 
-    btnClick.addEventListener('click', () => {
-         let checkLetter = document.querySelector(li).textContent;
+    // btnClick.addEventListener('click', () => {
+    //      let checkLetter = document.querySelector(li).textContent;
       
-         let match = 0;
+    //      let match = 0;
 
-         for (i =0; li.length < i; i++) {
-             if (checkLetter === li) {
-             var element = document.querySelector(li);
-             element.classList.add("show");
+    //      for (i =0; li.length < i; i++) {
+    //          if (checkLetter === li) {
+    //          var element = document.querySelector(li);
+    //          element.classList.add("show");
      
-             checkLetter.push(...match);
-         } 
+    //          checkLetter.push(...match);
+    //      } 
          
-    }
+    // }
 
    
 
 
   
-}
+// }
 
 // check if the game has been won or lost 
-const checkWin = () => {
-}
+// const checkWin = () => {
+// }
 
 // listen for the start game button to be pressed
 element_3.addEventListener('click', () => 
