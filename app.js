@@ -13,15 +13,19 @@ const phrase = ['JavaScript is fun', 'Ruby doesnt make sense', 'Golang is ambiti
 const getRandomPhraseAsArray = arr => {
    let randomNumber = Math.floor(Math.random() * phrase.length)
     arr = phrase[randomNumber];
+    console.log(arr);
+    console.log(randomNumber);
 }
 
 // adds the letters of a string to the display
 const addPhraseToDisplay = arr => {
-    let items = '';
+    
     function createListItems (arr) {
+        let items = '';
         for (let i = 0; i < arr.length; i++)        
         items += `<li>${arr[i]}</li>`;
         console.log(items);
+        
 
     //     if (!createListItems) {
     //         () => {
@@ -41,6 +45,7 @@ const addPhraseToDisplay = arr => {
     //     </ul>
     //     `;
 }
+
 
 
 }
